@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.gameContainer {
+    width: 450px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./src/The_Beatles_Abbey_Road.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    color: white;
+}
+
+.letterWidget {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 130px;
+    top: 470px;
+    color: white;
+}
+
+.shuffleIcon {
+    position: absolute;
+    width: 35px;
+    left: 85px;
+    top: 80px;
+    border-radius: 50%;
+}
+
+.shuffleButton:hover {
+    cursor: pointer;
+}
+
+.letters {
+    position: absolute;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.letters:nth-of-type(1) {
+    left: 80px;
+    top: 0px;
+}
+
+.letters:nth-of-type(2) {
+    left: 5px;
+    top: 50px;
+}
+
+.letters:nth-of-type(3) {
+    left: 25px;
+    top: 130px;
+}
+
+.letters:nth-of-type(4) {
+    left: 125px;
+    top: 130px;
+}
+
+.letters:nth-of-type(5) {
+    left: 145px;
+    top: 50px;
+}
+
+.letters:hover {
+    background-color: purple;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.puzzlePart {
+    position: relative;
+    font-size: 40px;
+}
+
+.words {
+    position: absolute;
+}
+
+.words:first-of-type {
+    left: 81px;
+    top: 50px;
+}
+
+.words:nth-of-type(2) {
+    left: 169px;
+    top: 43px;
+    display: flex;
+    flex-direction: column;
+}
+
+.words:nth-of-type(3) {
+    left: 81px;
+    top: 160px;
+}
+
+.words:nth-of-type(4) {
+    left: 169px;
+    top: 105px;
+}
+
+.words:nth-of-type(5) {
+    left: 301px;
+    top: 98px;
+    display: flex;
+    flex-direction: column;
+}
+
+.words span {
+    background-color: white;
+    position: relative;
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.userWord {
+    position: absolute;
+    font-size: 30px;
+    top: 410px;
+    left: 220px;
+    background-color: purple;
+    border-radius: 25%;
+    padding: 3px 10px;
+    display: none;
+    color: white;
+}
+
+#selectedLetter {
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.bulb img {
+    width: 40px;
+    position: absolute;
+    top: 400px;
+    left: 320px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bulb img:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 400px) {
+    header {
+        color: white;
+        text-align: center;
+    }
+
+    .gameContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .letterWidget {
+        left: 25%;
+        top: 465px;
+    }
+
+    .bulb img {
+        top: 430px;
+        left: 300px;
+    }
+
+    .words:first-of-type {
+        left: 61px;
+        top: 50px;
+    }
+
+    .words:nth-of-type(2) {
+        left: 149px;
+        top: 43px;
+    }
+
+    .words:nth-of-type(3) {
+        left: 61px;
+        top: 160px;
+    }
+
+    .words:nth-of-type(4) {
+        left: 149px;
+        top: 105px;
+    }
+
+    .words:nth-of-type(5) {
+        left: 281px;
+        top: 98px;
+    }
+}
